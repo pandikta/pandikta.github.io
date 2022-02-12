@@ -20,7 +20,7 @@
     transform: translate(-50%) !important;
   }
   #hero .row {
-    padding-bottom: 75px;
+    padding-bottom: 100px;
   }
   .btn-custom1 {
     width: 80%;
@@ -56,6 +56,10 @@
   }
   h2 {
     padding-top: 13px;
+  }
+
+  .social-icon svg {
+    padding-top: 10px !important;
   }
 
   .modal-content {
