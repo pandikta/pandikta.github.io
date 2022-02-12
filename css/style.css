@@ -1,0 +1,264 @@
+:root {
+  --mainColor: #041c32;
+  --secondaryColor: #04293a;
+  --acsentColor: #ff7844;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 100px;
+  font-family: "ubuntu", sans-serif;
+}
+
+section h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* navbar */
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 1;
+  transition: 0.5s !important;
+}
+/* end nav */
+
+/* section hero */
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+#hero {
+  color: white;
+  min-height: 100vh;
+  padding-top: 75px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* CTA */
+.btn-custom1 {
+  background-color: var(--acsentColor);
+  text-align: center;
+  color: #fff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+  box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+  color: #252734;
+}
+
+.cv {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+  transition: 0.2s !important;
+}
+
+.social-icon svg:hover {
+  transform: scale(1.5) !important;
+}
+/* end her */
+
+/* about */
+hr {
+  width: 35%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+/* end aboout */
+
+/* sckill */
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: #fff;
+}
+
+#skill img {
+  width: 12%;
+  margin: 10px;
+}
+
+#skill .card {
+  background-color: #293b5ad2;
+  height: 340px;
+  margin-top: 75px;
+}
+
+#skill .card:hover {
+  background-color: var(--acsentColor);
+}
+
+.skill-content {
+  margin-top: 120px;
+}
+
+/* end skill */
+
+/* sertif */
+#sertifikat {
+  margin-top: -170px;
+  padding-top: 270px;
+  padding-bottom: 80px;
+  background-color: var(--secondaryColor);
+  overflow: hidden;
+}
+
+#sertifikat p,
+a {
+  color: white !important;
+  text-decoration: none;
+}
+
+#sertifikat p,
+a:hover {
+  color: var(--acsentColor) !important;
+  text-decoration: none;
+}
+
+#sertifikat img {
+  width: 49%;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sertifikat img:hover {
+  transform: scale(1.02);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* endsertif */
+
+/* portfolio */
+#portfolio .container {
+  padding: 80px 10px;
+}
+
+#portfolio .card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.04);
+}
+
+/* end portfolio */
+
+/* footer */
+.social-icon-footer svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+  transition: 0.2s !important;
+}
+
+.social-icon-footer svg:hover {
+  transform: scale(1.5) !important;
+}
