@@ -75,6 +75,8 @@
   }
 
   .modal-content {
-    width: 100%;
+    display: block;
+    width: auto;
+    max-height: 100%;
   }
 }
